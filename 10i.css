@@ -1,0 +1,37 @@
+body {
+  background-color: rgb(0, 0, 0);
+  margin-left: 10px;
+}
+
+h2 {
+  color: white;
+}
+
+button {
+  font-family: Arial;
+  font-size: 20px;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  height: 60px;
+  width: 60px;
+  margin: 5px;
+}
+
+.grey-button {
+  background-color: rgb(49, 49, 49);
+}
+
+.clear-grey-button {
+  background-color: rgb(49, 49, 49);
+  font-size: 15px;
+}
+
+.orange-button {
+  background-color: rgb(251, 158, 8);
+}
+.display-style {
+  color: white;
+  
+  font-size: 40px;
+}

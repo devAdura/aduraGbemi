@@ -1,0 +1,40 @@
+body {
+  background-color: rgb(46, 46, 46);
+  color: white;
+  margin-left: 20px;
+  font-family: Verdana;
+}
+
+.time-display {
+  font-size: 20px;
+}
+
+.timer-button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px 10px;
+  font-size: 15px;
+  margin-right: 10px;
+  width: 70px;
+  border-radius: 3px;
+}
+
+.timer-button:hover {
+  background-color: lightblue;
+  transition: 1.5s;
+}
+
+h1 {
+  color: lightblue;
+}
+
+.container {
+  background-color: hsl(0, 0%, 0%);
+  text-align: center;
+  max-width: 350px;
+  margin: auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgb(139, 139, 139);
+}

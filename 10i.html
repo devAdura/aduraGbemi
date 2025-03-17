@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="10i.css">
+</head>
+<body>
+  <h2>Web Calculator</h2>
+  <p class="display-style js-display"></p>
+  <p>
+    <button class="grey-button" onclick="
+      updateCalculation('1');
+    ">1</button>
+
+    <button class="grey-button" onclick="
+      updateCalculation('2');
+    ">2</button>
+
+    <button class="grey-button" onclick="
+      updateCalculation('3');
+    ">3</button>
+
+    <button class="orange-button" onclick="
+      updateCalculation(' + ');
+    ">+</button>
+  </p>
+
+  <p>
+    <button class="grey-button" onclick="
+      updateCalculation('4');
+    ">4</button>
+
+    <button class="grey-button" onclick="
+      updateCalculation('5');
+    ">5</button>
+
+    <button class="grey-button" onclick="
+      updateCalculation('6');
+      ">6</button>
+      
+    <button class="orange-button" onclick="
+      updateCalculation(' - ');
+    ">-</button>
+  </p>
+  
+  <p>
+    <button class="grey-button" onclick="
+      updateCalculation('7');
+    ">7</button>
+
+    <button class="grey-button" onclick="
+      updateCalculation('8');
+    ">8</button>
+        
+    <button class="grey-button" onclick="
+      updateCalculation('9');
+    ">9</button>
+
+    <button class="orange-button" onclick="
+      updateCalculation(' * ');
+    ">*</button>
+  </p>
+
+  <p>
+    <button class="grey-button" onclick="
+      updateCalculation('0');
+    ">0</button>
+
+    <button class="grey-button" onclick="
+      updateCalculation('.');
+    ">.</button>
+
+    <button class="grey-button" onclick="
+      try {
+        calculation = eval(calculation);
+      } catch (error) {
+        calculation = 'Error';
+      }
+        forDisplay();
+
+      localStorage.setItem('calculation', calculation);
+    ">=</button>
+
+    <button class="orange-button" onclick="
+      updateCalculation(' / ');
+    ">/</button>
+  </p>
+
+  <p>
+    <button class="clear-grey-button" onclick="
+      calculation = '';
+      forDisplay();
+
+      localStorage.setItem('calculation', calculation);
+    ">Clear</button>
+  </p>
+   
+  <script src="10i.js"></script>
+</body>
+</html>
